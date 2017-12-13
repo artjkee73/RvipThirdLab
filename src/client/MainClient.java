@@ -11,7 +11,7 @@ public class MainClient {
         ExecutorService messageSourceService = Executors.newFixedThreadPool(100);
 
         //цикл ниже вызывает подозрение, разберусь позже
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 1; i++) {
             messageSourceService.execute(new MessageSource(i,imgUrls));
         }
 
